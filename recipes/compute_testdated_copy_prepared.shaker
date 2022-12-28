@@ -45,7 +45,7 @@
         "columns": [
           "dt_bk"
         ],
-        "timezone_id": "UTC",
+        "timezone_id": "America/Lima",
         "appliesTo": "SINGLE_COLUMN",
         "lang": "auto"
       },
