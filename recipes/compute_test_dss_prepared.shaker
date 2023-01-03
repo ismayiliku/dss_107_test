@@ -55,7 +55,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "DateParser",
       "params": {
         "outCol": "dt_parsed",
@@ -74,7 +74,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "FilterOnDate",
       "params": {
         "booleanMode": "AND",
