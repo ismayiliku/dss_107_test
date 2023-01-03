@@ -89,7 +89,7 @@
         "action": "KEEP_ROW",
         "appliesTo": "SINGLE_COLUMN",
         "filterType": "RELATIVE",
-        "option": "THIS"
+        "option": "LAST"
       },
       "alwaysShowComment": false
     }
