@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1672759565063
+    "lastModifiedOn": 1672759633081
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,10 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"creation_date","type":"string","originalType":"datetime"},
+      {"name":"office","type":"string","originalType":"char","maxLength":10}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
