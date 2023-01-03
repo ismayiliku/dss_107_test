@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1672757148370
+    "lastModifiedOn": 1672757163658
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"dt_bk","type":"string","meaning":"Date"},
+      {"name":"dt_bk","type":"date","meaning":"Date"},
       {"name":"Office","type":"string"}
     ],
     "userModified": true
