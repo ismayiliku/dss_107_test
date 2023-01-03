@@ -36,18 +36,19 @@
       "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "DateParser",
+      "type": "FilterOnValue",
       "params": {
-        "outCol": "testdate",
-        "formats": [
-          ""
-        ],
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
         "columns": [
-          "dt_bk"
+          "Office"
         ],
-        "timezone_id": "America/Lima",
-        "appliesTo": "SINGLE_COLUMN",
-        "lang": "auto"
+        "values": [
+          "US"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -78,6 +79,7 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "Office": 100,
     "testdate": 100,
     "dt_bk": 176
   },
