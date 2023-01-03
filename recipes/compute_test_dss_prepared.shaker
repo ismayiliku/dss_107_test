@@ -55,7 +55,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "DateParser",
       "params": {
         "outCol": "dt_parsed",
