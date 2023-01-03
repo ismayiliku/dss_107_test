@@ -35,7 +35,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnValue",
       "params": {
         "normalizationMode": "EXACT",
