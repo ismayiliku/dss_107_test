@@ -72,14 +72,14 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnDate",
       "params": {
         "booleanMode": "AND",
         "columns": [
-          "dt_parsed"
+          "creation_date"
         ],
         "part": "MONTH_OF_YEAR",
         "values": [],
