@@ -33,7 +33,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
@@ -49,6 +49,47 @@
         "matchingMode": "FULL_STRING",
         "action": "KEEP_ROW",
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "dt_parsed",
+        "formats": [
+          ""
+        ],
+        "columns": [
+          "creation_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnDate",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "dt_parsed"
+        ],
+        "part": "MONTH_OF_YEAR",
+        "values": [],
+        "relativeMax": 1,
+        "timezone_id": "UTC",
+        "relativeMin": 1,
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "filterType": "RELATIVE",
+        "option": "THIS"
       },
       "alwaysShowComment": false
     }
@@ -80,7 +121,8 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "creation_date": 176,
-    "office": 100
+    "office": 100,
+    "dt_parsed": 113
   },
   "sorting": [],
   "globalSearchQuery": "",
